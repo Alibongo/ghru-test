@@ -1,6 +1,7 @@
 /* splash styling */
 .splash{
   padding: 40px;
+  height: 800px;
   background-color: #bada55;
 }
 
@@ -8,10 +9,13 @@
     color: #767777;
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     font-weight: 500;
+    height: 700px;
+    padding: 40px;
   }
-.shapes{
-  position: relative;
-  left: 200px;
-  top: 0
 
+.illustration{
+  background-image: url(assets/shapes.png);
+  background-repeat: no-repeat;
+  background-position: right 30px top 88px;
+  background-size: 55%;
 }
