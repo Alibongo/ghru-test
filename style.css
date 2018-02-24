@@ -1,25 +1,17 @@
-/*splash styling */
+/* splash styling */
 .splash{
-  position: relative;
-    height: 800px;
-    width: auto;
-    background-color: #bada55;
-    /* background: url(assets/01.jpg) center 30% no-repeat; */
-    background-size: cover;
+  padding: 40px;
+  background-color: #bada55;
 }
 
-.ghru-slogan {
-    font-size: 60px;
-    padding-top: 160px;
-}
-
-.ghru-font{
+.ghru-title{
     color: #767777;
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     font-weight: 500;
-    line-height: 1;
-    padding-left: 60px;
   }
-.illustration{
-  padding-right: 60px;
+.shapes{
+  position: relative;
+  left: 200px;
+  top: 0
+
 }
