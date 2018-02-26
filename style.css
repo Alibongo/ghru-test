@@ -75,3 +75,9 @@ ol {
 .service-item p{
   padding: 10%;
 }
+
+.partner-icon{
+  display: inline-block;
+  text-align: center;
+  padding: 2%;
+}
