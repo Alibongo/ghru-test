@@ -28,7 +28,6 @@
     width: 100%;
     background-color: #37474f;
     height: 800px;
-
 }
 
 
@@ -76,12 +75,52 @@ ol {
   padding: 10%;
 }
 
-.partner-icon{
+/* partner cards */
+
+.mdl-card--horizontal-2 {
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 0px;
+}
+  .mdl-card__title {
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 1 auto;
+    float: left;
+  }
+  .mdl-card__title-text {
+    align-self: flex-start;
+  }
+  .mdl-card__media {
+    flex: 0 auto;
+    float: right;
+    height: 112px;
+    margin: 16px 16px 0 0;
+    width: 112px;
+  }
+
+  .mdl-card__media img{
+    height: 112px;
+    margin: 16px 16px 0 0;
+    width: 112px;
+  }
+
+  .mdl-card__actions {
+    clear: both;
+    flex: 1 auto;
+  }
+
+  /* join us */
+  .join-us {
+      width: 100%;
+      background-color: #37474f;
+      height: 800px;
+  }
+
+
+/* footer */
+/* .partner-icon{
   display: inline-block;
   text-align: center;
   padding: 2%;
-}
-
-.partner-card-1{
-  width:50% ;
-}
+} */
