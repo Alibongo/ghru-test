@@ -1,19 +1,65 @@
-/* splash styling */
-.splash{
-  padding: 40px;
-  height: 800px;
-  background-color: #bada55;
+/*--Variables--*/
+:root {
+  --primary-color: #06c;
+  --second-color: #8bced0;
+  --bg-color: #fff;
+  --title-weight: 600;
+  --head-weight: 400;
 }
 
-.ghru-title{
+h1{
+font-size: 75px;
+font-weight: 100;
+}
+
+p{
+  font-size: 20px;
+}
+
+h2{
+  font-size: 55px;
+  font-weight: 100;
+}
+
+
+/*--Header and Nav--*/
+.mdl-layout__header{
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  box-shadow: 0 0;
+}
+.mdl-layout__header-row .mdl-navigation__link{
+  color: var(--primary-color);
+}
+.mdl-layout__drawer-button{
+  background-color: var(--bg-color);
+}
+.material-icons{
+  color: var(--primary-color);
+}
+.mdl-layout__drawer{
+  color: var(--primary-color);
+}
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+  color: var(--primary-color);
+}
+
+/* splash styling */
+.splash {
+  padding: 40px;
+  height: 800px;
+  background-color: var(--bg-color);
+}
+
+.ghru-title {
     color: #767777;
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-family: var(--primary-font);
     font-weight: 500;
     height: 700px;
     padding: 40px;
   }
 
-.illustration{
+.illustration {
   background-image: url(assets/shapes.png);
   background-repeat: no-repeat;
   background-position: right 30px top 88px;
@@ -24,9 +70,9 @@
     padding: 40px;
 }
 
-.android-wear-band {
+.info {
     width: 100%;
-    background-color: #37474f;
+    background-color: var(--second-color);
     height: 800px;
 }
 
@@ -53,12 +99,23 @@
     margin: 0;
 }
 
-.wgsa-how-it-works ol {
+.service-pipe-mobile {
+  padding: 40px;
+  height: 1000px;
+  background-color: #f5f5f5;
+  background-image: url(assets/pipe.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+}
+
+/* .wgsa-how-it-works ol {
     display: grid;
     grid-template-columns: repeat(3);
     list-style: none;
     margin: 0;
-}
+} */
 ol {
     padding-left: 16px;
     padding-right: 16px;
