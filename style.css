@@ -21,6 +21,10 @@ h2{
   font-weight: 100;
 }
 
+a{
+  color: var(--primary-color);
+}
+
 
 /*--Header and Nav--*/
 .mdl-layout__header{
@@ -60,7 +64,7 @@ h2{
   }
 
 .illustration {
-  background-image: url(assets/shapes.png);
+  background-image: url(assets/brand-shape.png);
   background-repeat: no-repeat;
   background-position: right 30px top 88px;
   background-size: 55%;
@@ -167,11 +171,44 @@ ol {
     flex: 1 auto;
   }
 
-  /* join us */
+  /* TEST join us */
   .join-us {
       width: 100%;
       background-color: #37474f;
       height: 800px;
+  }
+
+
+  .contact-panel {
+    padding: 6em 4em;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .address-panel .material-icons {
+  position: relative;
+  top: 0.2em;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+
+  .mdl-textfield {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  @media screen and (min-width: 800px) {
+    .subscribe-button {
+      float: right;
+    }
   }
 
 
