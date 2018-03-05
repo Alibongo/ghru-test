@@ -1,4 +1,5 @@
 /*--Variables--*/
+
 :root {
   --primary-color: #06c;
   --second-color: #8bced0;
@@ -7,48 +8,71 @@
   --head-weight: 400;
 }
 
-h1{
-font-size: 75px;
-font-weight: 100;
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 75px;
+  font-weight: 800;
 }
 
-p{
-  font-size: 20px;
-}
-
-h2{
+h2 {
+  font-family: 'Raleway', sans-serif;
   font-size: 55px;
   font-weight: 100;
 }
+h3 {
+  margin: 6%;
+}
 
-a{
+a {
   color: var(--primary-color);
 }
 
+.mdl-typography--body-2{
+  font-size: 18px;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* p{
+  margin-top: -1.5em;
+  margin-bottom: -1.5em;
+} */
 
 /*--Header and Nav--*/
-.mdl-layout__header{
+.mdl-layout__header {
   background-color: var(--bg-color);
   color: var(--primary-color);
   box-shadow: 0 0;
 }
-.mdl-layout__header-row .mdl-navigation__link{
+
+.mdl-layout__header-row .mdl-navigation__link {
   color: var(--primary-color);
 }
-.mdl-layout__drawer-button{
+
+.mdl-layout__drawer-button {
   background-color: var(--bg-color);
 }
-.material-icons{
+
+.material-icons {
   color: var(--primary-color);
 }
-.mdl-layout__drawer{
+
+.mdl-layout__drawer {
   color: var(--primary-color);
 }
+
 .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
   color: var(--primary-color);
 }
 
 /* splash styling */
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
 .splash {
   padding: 40px;
   height: 800px;
@@ -56,54 +80,57 @@ a{
 }
 
 .ghru-title {
-    color: #767777;
-    font-family: var(--primary-font);
-    font-weight: 500;
-    height: 700px;
-    padding: 40px;
-  }
+  color: #767777;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  height: 700px;
+  padding: 40px;
+}
 
-.illustration {
+.splash {
   background-image: url(assets/brand-shape.png);
   background-repeat: no-repeat;
   background-position: right 30px top 88px;
   background-size: 55%;
 }
 
-.docs-layout.is-small-screen .about-panel {
-    padding: 40px;
-}
+/* .docs-layout.is-small-screen .about-panel {
+  padding: 40px;
+} */
 
 .info {
-    width: 100%;
-    background-color: var(--second-color);
-    height: 800px;
+  width: auto;
+  background-color: var(--second-color);
+  height: 600px;
 }
-
 
 .partner-map {
-    padding: 40px;
-    height: 800px;
-    background-color: #191E80;
-    background-image: url(assets/bluemap.png);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0;
+  padding: 40px;
+  height: 800px;
+  background-color: #b0c2e3;
+  background-image: url(assets/map-marks.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
 }
+
+/* .services-parent{
+  margin: 60%;
+} */
 
 .service-pipe {
-    padding: 40px;
-    height: 1000px;
-    background-color: #f5f5f5;
-    background-image: url(assets/pipe.png);
-    background-size: 36%;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0;
+  padding: 40px;
+  height: 600px;
+  background-color: #d374d9;
+  background-image: url(assets/pipe.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
 }
 
-.service-pipe-mobile {
+/* .service-pipe-mobile {
   padding: 40px;
   height: 1000px;
   background-color: #f5f5f5;
@@ -112,28 +139,34 @@ a{
   background-repeat: no-repeat;
   background-position: center;
   margin: 0;
-}
-
-/* .wgsa-how-it-works ol {
-    display: grid;
-    grid-template-columns: repeat(3);
-    list-style: none;
-    margin: 0;
 } */
-ol {
-    padding-left: 16px;
-    padding-right: 16px;
-}
 
+ol {
+  padding-left: 16px;
+  padding-right: 16px;
+}
 
 .service-item {
-    display: inline-block;
-    width: 36%;
-    margin-right: 64px;
-    text-align: center;
+  display: inline-block;
+  width: 36%;
+  margin-right: 64px;
+  text-align: center;
 }
-.service-item p{
-  padding: 10%;
+
+.service-icon{
+  padding: 4% 0 5% 0;
+}
+
+.service-icon-flag{
+  padding: 4% 0 1% 0;
+}
+
+.service-item p {
+  padding: 0 0 0 20%;
+}
+
+.pathogen-surveys{
+  margin: auto 0 6% 0;
 }
 
 /* partner cards */
@@ -143,50 +176,46 @@ ol {
   flex-wrap: wrap;
   min-height: 0px;
 }
-  .mdl-card__title {
-    align-items: flex-start;
-    flex-direction: column;
-    flex: 1 auto;
-    float: left;
-  }
-  .mdl-card__title-text {
-    align-self: flex-start;
-  }
-  .mdl-card__media {
-    flex: 0 auto;
-    float: right;
-    height: 112px;
-    margin: 16px 16px 0 0;
-    width: 112px;
-  }
 
-  .mdl-card__media img{
-    height: 112px;
-    margin: 16px 16px 0 0;
-    width: 112px;
-  }
+.mdl-card__title {
+  align-items: flex-start;
+  flex-direction: column;
+  flex: 1 auto;
+  float: left;
+}
 
-  .mdl-card__actions {
-    clear: both;
-    flex: 1 auto;
-  }
+.mdl-card__title-text {
+  align-self: flex-start;
+}
 
-  /* TEST join us */
-  .join-us {
-      width: 100%;
-      background-color: #37474f;
-      height: 800px;
-  }
+.mdl-card__media {
+  flex: 0 auto;
+  float: right;
+  height: 112px;
+  margin: 16px 16px 0 0;
+  width: 112px;
+}
 
+.mdl-card__media img {
+  height: 112px;
+  margin: 16px 16px 0 0;
+  width: 112px;
+}
 
-  .contact-panel {
-    padding: 6em 4em;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
+.mdl-card__actions {
+  clear: both;
+  flex: 1 auto;
+}
 
-  .address-panel .material-icons {
+.contact-panel {
+  padding: 6em 4em;
+  display: flex;
+  background-color: var(--second-color);
+  flex-direction: column;
+  margin: auto;
+}
+
+.address-panel .material-icons {
   position: relative;
   top: 0.2em;
   display: inline-block;
@@ -199,22 +228,40 @@ ol {
   border-radius: 50%;
 }
 
-  .mdl-textfield {
-    display: block;
-    width: 100%;
-    padding: 20px 0;
-  }
+.mdl-textfield {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+}
 
-  @media screen and (min-width: 800px) {
-    .subscribe-button {
-      float: right;
-    }
+@media screen and (min-width: 800px) {
+  .subscribe-button {
+    float: right;
   }
-
+}
 
 /* footer */
+
+.mdl-mega-footer{
+  background-color: #c6c2be;
+}
+
 /* .partner-icon{
   display: inline-block;
   text-align: center;
   padding: 2%;
 } */
+
+
+/*--Responsive--*/
+.service-item.mdl-cell--4-col-phone p{
+  padding: 0 0 0 6%;
+}
+
+.splash.mdl-cell--4-col-phone{
+  background-image: url(assets/brand-shape.png);
+  background-repeat: no-repeat;
+  background-position: right 45% top 116%;
+  background-size: 106%;
+  background-color: var(--bg-color);
+}
