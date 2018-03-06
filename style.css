@@ -18,7 +18,9 @@ h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 55px;
   font-weight: 100;
+  margin:0 0 12% 0;
 }
+
 h3 {
   margin: 6%;
 }
@@ -251,17 +253,52 @@ ol {
   text-align: center;
   padding: 2%;
 } */
+.RITM-icon{
+  width:50%;}
+.corp-icon{
+  width: 69%;}
+.ibad-icon{
+  width: 110%;}
+.kims-icon{
+ width:35%;
+}
+.whonet-icon{
+  width: 60%;}
+.wgc-icon{
+  width: 75%;}
 
 
 /*--Responsive--*/
 .service-item.mdl-cell--4-col-phone p{
-  padding: 0 0 0 6%;
+  padding: 0;
 }
 
-.splash.mdl-cell--4-col-phone{
+.splash.mdl-cell--4-col-phone {
   background-image: url(assets/brand-shape.png);
   background-repeat: no-repeat;
-  background-position: right 45% top 116%;
-  background-size: 106%;
+  background-position: right 50% top 97%;
+  background-size: 55%;
   background-color: var(--bg-color);
+}
+.info.mdl-cell.mdl-cell--6-col.mdl-cell--4-col-phone {
+  /* height: 50%; */
+  padding: 40px;
+}
+
+.service-panel.service-pipe.mdl-cell--4-col-phone {
+  background-size: 78%;
+  background-position: bottom;
+  margin: 0;
+  color: #254784 !important;
+}
+
+.partner-panel.partner-map.mdl-cell--4-col-phone {
+  padding: 40px;
+  height: 200px;
+  background-color: #b0c2e3;
+  /* background-image: url(assets/map-marks.png); */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
 }
